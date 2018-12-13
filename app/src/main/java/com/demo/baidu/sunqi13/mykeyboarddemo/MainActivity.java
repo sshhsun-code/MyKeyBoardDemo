@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
         //local_branch push tests
 
         // local branch push test 2
+        // local branch push test 2
+        // local_branch conflit test
+        // this is local_branch
+        // this is local_branch
 
         // master conflit test
     }
