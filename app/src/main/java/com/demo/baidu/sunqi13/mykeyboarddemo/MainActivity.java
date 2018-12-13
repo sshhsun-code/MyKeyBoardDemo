@@ -11,5 +11,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //local_branch push tests
+
+        // local branch push test 2
     }
 }
