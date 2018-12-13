@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         // this is local_branch
         // this is local_branch
 
-        // master conflit test
-
         //冲突测试 2 from main branch
+
+        //confit test2 from local_branch
     }
 }
