@@ -38,12 +38,10 @@ public class IMEService extends InputMethodService {
     public View onCreateInputView() {
         Log.e(TAG, "onCreateInputView");
         mKeyboardView = (KeyboardView) getLayoutInflater().inflate(R.layout.keyboard, null);
-
         mLetterKey = new Keyboard(this, R.xml.qwerty);
         mNumberKey = new Keyboard(this, R.xml.symbols);
 
         mKeyboardView.setKeyboard(mLetterKey);
-        mKeyboardView.setPreviewEnabled(true);
         mKeyboardView.setEnabled(true);
         mKeyboardView.setOnKeyboardActionListener(mKeyBoardActListener);
 
@@ -153,6 +151,7 @@ public class IMEService extends InputMethodService {
                     break;
                 case Keyboard.KEYCODE_SHIFT:// 大小写切换
                     changeKey();
+                    mKeyboardView.setKeepScreenOn(mIsUpper);
                     mKeyboardView.setKeyboard(mLetterKey);
                     break;
                 case 57419:// go left
